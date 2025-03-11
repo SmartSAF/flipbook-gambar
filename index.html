@@ -42,15 +42,15 @@
             const flipbook = $('#flipbook');
             const slider = $('#slider');
             const pageNumber = $('#pageNumber');
-            const totalPages = 5; // Total halaman
+            const totalPages = 10; // Total halaman
 
             // Inisialisasi Turn.js
             flipbook.turn({
-                width: 800,
-                height: 600,
+                width: '100%',
+                height: '80vh',
                 autoCenter: true,
-                duration: 1000, // Durasi animasi flip
-                acceleration: true, // Aktifkan percepatan animasi
+                duration: 1500, // Durasi animasi flip diperlambat
+                acceleration: false, // Nonaktifkan percepatan animasi
                 gradients: true, // Efek gradien saat flip
                 display: 'double', // Tampilkan dua halaman sekaligus (seperti buku)
                 when: {
@@ -121,8 +121,8 @@
                 const currentX = e.pageX || e.originalEvent.touches[0].pageX;
                 const deltaX = currentX - startX;
 
-                // Geser hingga 75% dari lebar halaman baru halaman dibalik
-                const threshold = flipbook.width() * 0.75;
+                // Geser hingga 87% dari lebar halaman baru halaman dibalik
+                const threshold = flipbook.width() * 0.87;
 
                 if (deltaX > threshold) {
                     flipbook.turn('previous');
