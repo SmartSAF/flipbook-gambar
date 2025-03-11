@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook Gambar Profesional</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.1/turn.min.css">
+</head>
+<body>
+    <div id="flipbook">
+        <!-- Halaman 1 -->
+        <div class="page">
+            <img src="images/image1.png" alt="Gambar 1">
+        </div>
+
+        <!-- Halaman 2 -->
+        <div class="page">
+            <img src="images/image2.png" alt="Gambar 2">
+        </div>
+
+        <!-- Halaman 3 -->
+        <div class="page">
+            <img src="images/image3.png" alt="Gambar 3">
+        </div>
+
+        <!-- Halaman 4 -->
+        <div class="page">
+            <img src="images/image4.png" alt="Gambar 4">
+        </div>
+
+        <!-- Halaman 5 -->
+        <div class="page">
+            <img src="images/image5.png" alt="Gambar 5">
+        </div>
+    </div>
+
+    <!-- Load jQuery dari CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Load Turn.js dari folder javascript -->
+    <script src="javascript/turn.min.js"></script>
+    <!-- Inisialisasi Flipbook -->
+    <script>
+        $(document).ready(function() {
+            $('#flipbook').turn({
+                width: 800,
+                height: 600,
+                autoCenter: true,
+                duration: 1000, // Durasi animasi flip
+                acceleration: true, // Aktifkan percepatan animasi
+                gradients: true, // Efek gradien saat flip
+                display: 'double', // Tampilkan dua halaman sekaligus (seperti buku)
+                page: 1, // Mulai dari halaman pertama
+                turnCorners: 'bl,br', // Efek melipat halaman
+            });
+        });
+    </script>
+</body>
+</html>
