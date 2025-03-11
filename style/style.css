@@ -2,33 +2,34 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: linear-gradient(135deg, #ff6b6b, #ff4757); /* Gradiasi pink dan merah */
 }
 
 #flipbook {
-    width: 800px;
-    height: 600px;
+    width: 97%; /* Lebar flipbook 97% dari layar */
+    height: 80vh;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
 }
 
 .page {
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk halaman */
 }
 
 .page img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 97%; /* Gambar tidak memenuhi 100% halaman */
+    max-height: 97%;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Garis Navigasi */
