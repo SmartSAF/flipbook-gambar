@@ -14,22 +14,21 @@ body {
 #flipbook {
     width: 97%; /* Lebar flipbook 97% dari layar */
     height: 80vh;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-    background-color: #fff;
+    background-color: transparent; /* Hilangkan kontainer putih */
 }
 
 .page {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk halaman */
+    background-color: transparent; /* Hilangkan kontainer putih */
 }
 
 .page img {
     max-width: 97%; /* Gambar tidak memenuhi 100% halaman */
     max-height: 97%;
     border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Bayangan untuk gambar */
 }
 
 /* Garis Navigasi */
