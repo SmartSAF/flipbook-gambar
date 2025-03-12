@@ -46,7 +46,7 @@
 
             // Inisialisasi Turn.js
             flipbook.turn({
-                width: '100%',
+                width: '97%', // Lebar flipbook 97% dari layar
                 height: '80vh',
                 autoCenter: true,
                 duration: 1500, // Durasi animasi flip
@@ -76,7 +76,7 @@
                 pageNumber.text(`Halaman ${page}`);
             }
 
-            // Fungsi untuk menggeser slider
+            // Fungsi untuk menggeser slider (Teknik GG)
             slider.on('mousedown touchstart', function(e) {
                 e.preventDefault();
                 const barWidth = $('.navigation-bar').width();
@@ -107,7 +107,7 @@
             // Inisialisasi posisi slider
             updateSliderPosition(1);
 
-            // Geser halaman dengan jari
+            // Geser halaman dengan jari (Teknik GH)
             let startX = 0;
             let isDragging = false;
 
